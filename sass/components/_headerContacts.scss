@@ -1,0 +1,91 @@
+.contacts-block {
+  align-items: center;
+
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+
+  @media screen and (min-width: 1200px) {
+    display: flex;
+  }
+
+  .element-pic {
+    vertical-align: middle;
+    margin-right: 10px;
+    fill: $second-text-color;
+    @media screen and (min-width: 1200px) {
+      padding: 20px 0px;
+    }
+  }
+
+  .element-container {
+    display: flex;
+
+    &:hover .element-pic {
+      fill: $accent-color;
+      cursor: pointer;
+    }
+  }
+}
+
+.mail {
+  margin-bottom: 10px;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.16;
+  letter-spacing: 0.02em;
+  color: $second-text-color;
+  transition: color 250ms linear;
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 0;
+    margin-right: $margin-right-list;
+    font-size: $main-font-size;
+    line-height: 1.14;
+  }
+
+  &-pic {
+    transition: fill 250ms linear;
+    width: 14px;
+    height: 10px;
+    @media screen and (min-width: 1200px) {
+      width: 16px;
+      height: 12px;
+    }
+  }
+
+  &:hover,
+  &:focus {
+    color: $accent-color;
+    fill: $accent-color;
+  }
+}
+
+.phone {
+  align-items: flex-end;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: $second-text-color;
+  transition: color 250ms linear;
+  @media screen and (min-width: 1200px) {
+    font-size: $main-font-size;
+    line-height: 1.14;
+  }
+
+  &-pic {
+    transition: fill 250ms linear;
+    width: 10px;
+    height: 14px;
+    @media screen and (min-width: 1200px) {
+      width: 10px;
+      height: 16px;
+    }
+  }
+
+  &:hover,
+  &:focus {
+    color: $accent-color;
+    transition: color 250ms linear;
+  }
+}
