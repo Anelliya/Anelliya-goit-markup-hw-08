@@ -1,5 +1,4 @@
 .main-nav {
-  // position: relative;
   display: flex;
   justify-content: space-between;
 
@@ -12,8 +11,6 @@
   }
 
   &-wrapper {
-    display: flex;
-
     @media screen and (max-width: 767px) {
       z-index: 100;
       position: absolute;
@@ -28,6 +25,9 @@
       &.is-open {
         display: block;
       }
+    }
+    @media screen and (min-width: 768px) {
+      display: flex;
     }
   }
 }
@@ -125,7 +125,11 @@
   background-color: white;
   border: none;
 
-  @media screen and (min-width: 767px) {
+  &:hover {
+    fill: $accent-color;
+  }
+
+  @media screen and (min-width: 768px) {
     display: none;
   }
 

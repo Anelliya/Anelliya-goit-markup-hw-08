@@ -164,12 +164,6 @@ button {
   }
 }
 
-.main-nav-wrapper {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
 @media screen and (max-width: 767px) {
   .main-nav-wrapper {
     z-index: 100;
@@ -184,6 +178,14 @@ button {
   }
   .main-nav-wrapper.is-open {
     display: block;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .main-nav-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
   }
 }
 
@@ -284,7 +286,11 @@ button {
   border: none;
 }
 
-@media screen and (min-width: 767px) {
+.mobile-button:hover {
+  fill: #2196f3;
+}
+
+@media screen and (min-width: 768px) {
   .mobile-button {
     display: none;
   }
