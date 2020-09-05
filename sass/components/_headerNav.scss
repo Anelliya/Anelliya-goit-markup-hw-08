@@ -1,34 +1,50 @@
 .main-nav {
-  align-items: center;
-  @media screen and (min-width: 768px) {
+  // position: relative;
+  display: flex;
+  justify-content: space-between;
+
+  @media screen and (max-width: 767px) {
+    align-items: center;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    padding-left: 15px;
+    padding-right: 10px;
+  }
+
+  &-wrapper {
     display: flex;
+
+    @media screen and (max-width: 767px) {
+      z-index: 100;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      width: 100%;
+      display: none;
+      background-color: #fff;
+      box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04),
+        0px 2px 4px rgba(0, 0, 0, 0.08), 0px 1px 3px rgba(0, 0, 0, 0.16);
+
+      &.is-open {
+        display: block;
+      }
+    }
   }
 }
 
 .navigation-list {
   @media screen and (max-width: 767px) {
-    display: none;
+    text-align: center;
+    padding-top: 60px;
+    padding-bottom: 60px;
   }
+
   @media screen and (min-width: 768px) {
-    display: flex;
-  }
-}
-
-.navigation-item {
-  .link {
-    padding-top: 32px;
-    padding-bottom: 32px;
-    transition: color 250ms linear;
-    font-weight: 500;
-    font-size: $main-font-size;
-    line-height: 1.14;
-    letter-spacing: 0.02em;
-    color: $first-text-color;
+    margin-right: 82px;
   }
 
-  .activ-link-color {
-    position: relative;
-    color: $accent-color;
+  @media screen and (min-width: 1200px) {
+    margin-right: 300px;
   }
 
   .activ-link-color::after {
@@ -39,16 +55,89 @@
     display: inline-block;
     width: 100%;
     height: 4px;
+
     background-color: #2196f3;
     border-radius: 2px;
   }
+}
 
-  &:not(:last-child) {
-    margin-right: 50px;
+.navigation-item {
+  @media screen and (max-width: 767px) {
+    &:not(:last-child) {
+      margin-bottom: 40px;
+    }
+
+    .mobi-size-studio {
+      width: 66px;
+      height: 33px;
+    }
+
+    .mobi-size-portfolio {
+      width: 99px;
+      height: 33px;
+    }
+
+    .mobi-size-contacts {
+      width: 87px;
+      height: 33px;
+    }
+  }
+
+  @media screen and (min-width: 768px) {
+    &:not(:last-child) {
+      margin-right: 50px;
+    }
+  }
+
+  .link {
+    transition: color 250ms linear;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: $first-text-color;
+
+    @media screen and (max-width: 767px) {
+      margin: auto;
+    }
+
+    @media screen and (min-width: 768px) {
+      font-size: $main-font-size;
+      padding-top: 32px;
+      padding-bottom: 32px;
+    }
+  }
+
+  .activ-link-color {
+    position: relative;
+    color: $accent-color;
   }
 }
 
 .navigation-list .link:hover,
 .navigation-list .link:focus {
   color: $accent-color;
+}
+
+.mobile-button {
+  padding: 0;
+  margin: 0;
+  background-color: white;
+  border: none;
+
+  @media screen and (min-width: 767px) {
+    display: none;
+  }
+
+  .close-icon {
+    display: none;
+  }
+}
+
+.mobile-button.is-open .close-icon {
+  display: block;
+}
+
+.mobile-button.is-open .menu-icon {
+  display: none;
 }

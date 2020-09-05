@@ -7,17 +7,18 @@
   letter-spacing: 0.03em;
   color: $accent-color;
 
-  @media screen and (max-width: 767px) {
-    padding: 16px 0;
-  }
+  // @media screen and (max-width: 767px) {
+  //   padding: 16px 0;
+  // }
 
-  @media screen and (min-width: 767px) {
+  @media screen and (min-width: 768px) {
+    display: flex;
+    align-items: center;
     margin-right: 88px;
   }
 
   @media screen and (min-width: 1200px) {
     width: 145px;
-    margin-right: 94px;
     font-size: 26px;
     line-height: 1.17;
   }

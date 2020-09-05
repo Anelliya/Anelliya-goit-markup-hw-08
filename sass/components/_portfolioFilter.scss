@@ -1,15 +1,29 @@
 .portfolio {
   .filter {
-    justify-content: center;
-    margin-bottom: 34px;
-    margin-top: 94px;
-    height: 38px;
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 60px;
+    padding-bottom: 40px;
+
+    @media screen and (min-width: 768px) {
+      justify-content: center;
+      padding-bottom: 30px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      padding-top: 94px;
+      padding-bottom: 50px;
+    }
   }
 }
 
 .portfolio-filter-item {
   &:not(:last-child) {
     margin-right: 8px;
+  }
+
+  @media screen and (min-width: 480px) and (max-width: 767px) {
+    margin-bottom: 15px;
   }
 
   .all {
