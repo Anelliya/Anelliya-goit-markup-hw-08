@@ -125,10 +125,6 @@
   background-color: white;
   border: none;
 
-  &:hover {
-    fill: $accent-color;
-  }
-
   @media screen and (min-width: 768px) {
     display: none;
   }
