@@ -48,20 +48,20 @@
   align-items: center;
   justify-content: center;
   height: 38px;
-  background: #f5f4fa;
+  background: $color-background-first;
   border-radius: 4px;
   transition: background-color 250ms linear;
 }
 
 .portfolio .link {
   font-weight: 500;
-  font-size: $second-font-size;
+  font-size: $font-size-second;
   line-height: 1.63;
   letter-spacing: 0.03em;
-  color: $first-text-color;
-  background-color: $background-first-color;
+  color: $color-text-darkgrey;
+  background-color: $color-background-first;
 }
 .portfolio .link:hover {
-  color: $third-text-color;
-  background-color: $accent-color;
+  color: $color-text-white;
+  background-color: $color-accent;
 }

@@ -3,13 +3,13 @@
     display: none;
   }
   padding-bottom: $padding-bottom-container;
-  font-weight: 700;
-  font-size: $main-font-size;
+  font-weight: bold;
+  font-size: $font-size-main;
   line-height: 1.14;
   text-align: center;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  color: $third-text-color;
+  color: $color-text-white;
 
   .header {
     margin-bottom: 50px;
@@ -18,7 +18,7 @@
     text-align: center;
     text-transform: none;
     letter-spacing: 0.03em;
-    color: $first-text-color;
+    color: $color-text-darkgrey;
     border: none;
   }
 
@@ -36,7 +36,7 @@
     width: 370px;
 
     &:not(:last-child) {
-      margin-right: $margin-right-list;
+      margin-right: $margin-right;
     }
   }
 }

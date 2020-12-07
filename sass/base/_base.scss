@@ -35,8 +35,8 @@ h2 {
 }
 
 .body {
-  font-family: $main-font;
-  background: $third-text-color;
+  font-family: $font-main;
+  background: $color-text-white;
 }
 
 .container {
@@ -60,7 +60,7 @@ h2 {
 .link {
   display: block;
   text-decoration: none;
-  font-style: normal;
+
   cursor: pointer;
 }
 

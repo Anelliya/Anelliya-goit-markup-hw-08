@@ -1,6 +1,6 @@
 .join {
   // @media screen and (min-width: 768) {
-  //   margin-right: 30px;
+  //   margin-right: $margin-right;
   //   padding-top: 72px;
   //   padding-bottom: 100px;
   //   width: 370px;
@@ -20,12 +20,12 @@
 
   &-header {
     margin-bottom: 20px;
-    font-weight: 700;
-    font-size: $main-font-size;
+    font-weight: bold;
+    font-size: $font-size-main;
     line-height: 1.14;
     letter-spacing: 0.03em;
     text-transform: uppercase;
-    color: $third-text-color;
+    color: $color-text-white;
   }
 
   &-item:not(:last-child) {
@@ -39,11 +39,11 @@
     }
 
     .social-list-item:hover {
-      background-color: $accent-color;
+      background-color: $color-accent;
     }
 
     .social-items {
-      fill: #ffffff;
+      fill: $color-text-white;
     }
   }
 }

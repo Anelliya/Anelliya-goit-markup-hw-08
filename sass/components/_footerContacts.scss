@@ -1,29 +1,29 @@
 .footer {
   .logo {
     margin-bottom: 20px;
-    font-family: $logo-font;
-    font-weight: 700;
+    font-family: $font-logo;
+    font-weight: bold;
     font-size: 24px;
     line-height: 1.17;
     letter-spacing: 0.03em;
-    color: $accent-color;
+    color: $color-accent;
     @media screen and (min-width: 1200px) {
       font-size: 26px;
       line-height: 1.19;
     }
 
     & > span {
-      color: $third-text-color;
+      color: $color-text-white;
     }
   }
 
   .adress {
     padding-bottom: 8px;
-    font-style: normal;
-    font-size: $main-font-size;
+
+    font-size: $font-size-main;
     line-height: 1.71;
     letter-spacing: 0.03em;
-    color: $third-text-color;
+    color: $color-text-white;
 
     @media screen and (min-width: 768px) {
       padding-bottom: 9px;
@@ -43,7 +43,7 @@
     }
 
     &-item {
-      font-size: $main-font-size;
+      font-size: $font-size-main;
       line-height: 1.17;
       letter-spacing: 0.03em;
       color: rgba(255, 255, 255, 0.6);
@@ -52,7 +52,7 @@
 
     &-item:hover,
     &-item:focus {
-      color: $accent-color;
+      color: $color-accent;
     }
 
     .mail {

@@ -18,7 +18,7 @@
   .element-pic {
     vertical-align: middle;
     margin-right: 10px;
-    fill: $second-text-color;
+    fill: $color-text-grey;
 
     @media screen and (min-width: 768px) {
       margin-right: 8px;
@@ -35,7 +35,7 @@
     justify-content: center;
 
     &:hover .element-pic {
-      fill: $accent-color;
+      fill: $color-accent;
       cursor: pointer;
     }
   }
@@ -46,7 +46,7 @@
     font-size: 18px;
     line-height: 1.16;
     letter-spacing: 0.02em;
-    color: $second-text-color;
+    color: $color-text-grey;
     transition: color 250ms linear;
 
     @media screen and (min-width: 768px) {
@@ -54,8 +54,8 @@
     }
     @media screen and (min-width: 1200px) {
       margin-bottom: 0;
-      margin-right: $margin-right-list;
-      font-size: $main-font-size;
+      margin-right: $margin-right;
+      font-size: $font-size-main;
       line-height: 1.14;
     }
 
@@ -77,8 +77,8 @@
 
     &:hover,
     &:focus {
-      color: $accent-color;
-      fill: $accent-color;
+      color: $color-accent;
+      fill: $color-accent;
     }
   }
 
@@ -88,7 +88,7 @@
     font-size: 18px;
     line-height: 1.14;
     letter-spacing: 0.02em;
-    color: $second-text-color;
+    color: $color-text-grey;
     transition: color 250ms linear;
 
     @media screen and (min-width: 768px) {
@@ -96,7 +96,7 @@
     }
 
     @media screen and (min-width: 1200px) {
-      font-size: $main-font-size;
+      font-size: $font-size-main;
       line-height: 1.14;
     }
 
@@ -112,7 +112,7 @@
 
     &:hover,
     &:focus {
-      color: $accent-color;
+      color: $color-accent;
       transition: color 250ms linear;
     }
   }

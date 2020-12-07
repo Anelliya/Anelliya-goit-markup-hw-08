@@ -75,7 +75,6 @@ h2 {
 .link {
   display: block;
   text-decoration: none;
-  font-style: normal;
   cursor: pointer;
 }
 
@@ -112,7 +111,7 @@ button {
 .logo-text {
   width: 134px;
   font-family: "Raleway", sans-serif;
-  font-weight: 700;
+  font-weight: bold;
   font-size: 24px;
   line-height: 1.19;
   letter-spacing: 0.03em;
@@ -562,7 +561,7 @@ button {
   width: 200px;
   height: 50px;
   padding: 0;
-  font-weight: 700;
+  font-weight: bold;
   font-size: 16px;
   line-height: 1.88;
   letter-spacing: 0.06em;
@@ -613,7 +612,7 @@ button {
 
 .why-are-we .reason-item {
   margin-bottom: 10px;
-  font-weight: 700;
+  font-weight: bold;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.03em;
@@ -658,7 +657,7 @@ button {
 
 .what-are-we-do {
   padding-bottom: 94px;
-  font-weight: 700;
+  font-weight: bold;
   font-size: 14px;
   line-height: 1.14;
   text-align: center;
@@ -1018,7 +1017,7 @@ button {
 .footer .logo {
   margin-bottom: 20px;
   font-family: "Raleway", sans-serif;
-  font-weight: 700;
+  font-weight: bold;
   font-size: 24px;
   line-height: 1.17;
   letter-spacing: 0.03em;
@@ -1038,7 +1037,6 @@ button {
 
 .footer .adress {
   padding-bottom: 8px;
-  font-style: normal;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
@@ -1114,7 +1112,7 @@ button {
 
 .join-header {
   margin-bottom: 20px;
-  font-weight: 700;
+  font-weight: bold;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.03em;
@@ -1154,7 +1152,7 @@ button {
 
 .subscription-block-label {
   margin-bottom: 20px;
-  font-weight: 700;
+  font-weight: bold;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.03em;
@@ -1211,7 +1209,6 @@ button {
   border: none;
   padding: 0;
   font-family: "Roboto", sans-serif;
-  font-style: normal;
   font-weight: bold;
   font-size: 16px;
   letter-spacing: 0.06em;
@@ -1329,6 +1326,12 @@ button {
       flex-wrap: wrap;
 }
 
+@media screen and (min-width: 1200px) {
+  .project {
+    padding-bottom: 94px;
+  }
+}
+
 .project .item {
   margin-bottom: 30px;
 }
@@ -1351,9 +1354,6 @@ button {
   .project .item:nth-child(3n) {
     margin-right: 0;
   }
-  .project .item:nth-last-child(-n + 3) {
-    margin-bottom: 94px;
-  }
 }
 
 .project-list-element {
@@ -1366,7 +1366,8 @@ button {
 }
 
 .project-list-element:hover {
-  box-: 1px 4px 6px rgba(0, 0, 0, 0.16), 0px 4px 4px rgba(0, 0, 0, 0.06), 0px 1px 1px rgba(0, 0, 0, 0.12);
+  -webkit-box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.16), 0px 4px 4px rgba(0, 0, 0, 0.06), 0px 1px 1px rgba(0, 0, 0, 0.12);
+          box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.16), 0px 4px 4px rgba(0, 0, 0, 0.06), 0px 1px 1px rgba(0, 0, 0, 0.12);
 }
 
 .overlay-wrapper {
@@ -1408,7 +1409,7 @@ button {
 
 .project .item .name {
   margin-bottom: 4px;
-  font-weight: 700;
+  font-weight: bold;
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
@@ -1449,7 +1450,8 @@ button {
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
   background-color: white;
-  box-: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1513,7 +1515,6 @@ button {
   margin-bottom: 28px;
   background-color: #ffffff;
   font-family: "Roboto", sans-serif;
-  font-style: normal;
   font-weight: normal;
   font-size: 14px;
   line-height: 16px;
@@ -1528,11 +1529,11 @@ button {
   margin: auto;
   padding: 0;
   background: #2196f3;
-  box-: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   border: none;
   font-family: "Roboto", sans-serif;
-  font-style: normal;
   font-weight: bold;
   font-size: 16px;
   line-height: 30px;

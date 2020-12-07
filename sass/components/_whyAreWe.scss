@@ -10,7 +10,7 @@
     @media screen and (min-width: 768px) {
       width: 354px;
       &:nth-child(2n + 1) {
-        margin-right: $margin-right-list;
+        margin-right: $margin-right;
       }
     }
 
@@ -18,26 +18,26 @@
       flex-wrap: nowrap;
       width: 270px;
       &:not(:last-child) {
-        margin-right: $margin-right-list;
+        margin-right: $margin-right;
       }
     }
 
     .description {
-      font-size: $main-font-size;
+      font-size: $font-size-main;
       line-height: 1.71;
       letter-spacing: 0.03em;
-      color: $second-text-color;
+      color: $color-text-grey;
     }
   }
 
   .reason-item {
     margin-bottom: 10px;
-    font-weight: 700;
-    font-size: $main-font-size;
+    font-weight: bold;
+    font-size: $font-size-main;
     line-height: 1.14;
     letter-spacing: 0.03em;
     text-transform: uppercase;
-    color: $first-text-color;
+    color: $color-text-darkgrey;
 
     @media screen and (max-width: 767px) {
       text-align: center;
@@ -46,10 +46,10 @@
     &::before {
       content: "";
       display: inline-block;
-      margin-bottom: 30px;
+      margin-bottom: $margin-right;
       width: 100%;
       height: 120px;
-      background: #f5f4fa;
+      background: $color-background-first;
       border-radius: 4px;
       background-repeat: no-repeat;
       background-position: center;
