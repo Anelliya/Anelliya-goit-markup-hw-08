@@ -133,6 +133,7 @@
   &:focus + &-label,
   &:not(:placeholder-shown) + &-label {
     color: $color-accent;
+    border-color: $color-accent;
     transform: translateY(-40px);
     left: 16px;
     transition: 250ms linear;
@@ -190,7 +191,7 @@
     margin-bottom: 30px;
   }
 
-  &:checked + .checkbox-icon {
+  &:checked + .checkbox-agreement::before {
     width: 16px;
     height: 15px;
     fill: white;
@@ -218,6 +219,18 @@
     line-height: 24px;
     letter-spacing: 0.03em;
     color: $color-text-grey;
+
+    &::before {
+      content: "";
+      width: 16px;
+      height: 15px;
+      margin-right: 8px;
+      display: inline-block;
+      box-sizing: border-box;
+      border: 2px solid black;
+      border-radius: 2px;
+      flex-shrink: 0;
+    }
 
     .link {
       display: inline-block;

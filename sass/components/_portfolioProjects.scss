@@ -1,8 +1,19 @@
-.project {
-  flex-wrap: wrap;
+.portfolio .container {
+  @media screen and (min-width: 768px) {
+    padding-top: 60px;
+  }
+
   @media screen and (min-width: 1200px) {
+    padding-top: 94px;
     padding-bottom: 94px;
   }
+}
+
+.project {
+  flex-wrap: wrap;
+  // @media screen and (min-width: 1200px) {
+  //   padding-bottom: 94px;
+  // }
 
   .item {
     margin-bottom: 30px;
@@ -34,17 +45,16 @@
   box-sizing: border-box;
   border: 1px solid #eeeeee;
   transition: box- 250ms linear;
-  &:hover {
+  &:hover .overlay-wrapper {
     box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.16), 0px 4px 4px rgba(0, 0, 0, 0.06),
       0px 1px 1px rgba(0, 0, 0, 0.12);
+    -webkit-transform: translateY(0%);
+    transform: translateY(0%);
   }
 }
 .overlay-wrapper {
   position: relative;
   overflow: hidden;
-  &:hover .project-list-overlay {
-    transform: translateY(0%);
-  }
 }
 
 .project-list-overlay {

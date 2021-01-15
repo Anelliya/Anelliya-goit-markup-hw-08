@@ -50,7 +50,7 @@
   height: 38px;
   background: $color-background-first;
   border-radius: 4px;
-  transition: background-color 250ms linear;
+  border: none;
 }
 
 .portfolio .link {
@@ -62,6 +62,8 @@
   background-color: $color-background-first;
 }
 .portfolio .link:hover {
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
   color: $color-text-white;
   background-color: $color-accent;
 }

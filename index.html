@@ -6,7 +6,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="./sass/base/normolize.css" />
-    <link rel="stylesheet" href="./css/main.css" />
+    <link rel="stylesheet" href="./css/main.min.css" />
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dev Studio. Эффективные решения для вашего бизнеса</title>
@@ -37,27 +37,29 @@
                             <a class="link mobi-size-contacts" href="#contacts">Контакты</a>
                         </li>
                     </ul>
+
                     <div class="contacts-block">
-                        <div class="element-container">
-                            <a class="mail link" href="mailto:info@devstudio.com">
-                                <svg class="mail-pic element-pic">
-                                    <use href="./images/sprite.svg#mail"></use>
-                                </svg>
-                                info@devstudio.com
-                            </a>
-                        </div>
-                        <div class="element-container">
-                            <a class="phone link" href="tel:+380961111111">
-                                <svg class="phone-pic element-pic">
-                                    <use href="./images/sprite.svg#phone"></use>
-                                </svg>
-                                +38 096 111 11 11
-                            </a>
-                        </div>
+                        <ul>
+                            <li class="element-container">
+                                <a class="mail link" href="mailto:info@devstudio.com">
+                                    <svg class="mail-pic element-pic">
+                                        <use href="./images/sprite.svg#mail"></use>
+                                    </svg>
+                                    info@devstudio.com
+                                </a>
+                            </li>
+                            <li class="element-container">
+                                <a class="phone link" href="tel:+380961111111">
+                                    <svg class="phone-pic element-pic">
+                                        <use href="./images/sprite.svg#phone"></use>
+                                    </svg>
+                                    +38 096 111 11 11
+                                </a>
+                            </li>
+                        </ul>
                     </div>
                 </div>
             </nav>
-
         </div>
     </header>
     <main>
@@ -76,22 +78,22 @@
                 <h2 hidden>Почему мы</h2>
                 <ul class="list">
                     <li class="why-are-we-list">
-                        <p class="reason-item first-reason-img">Внимание к деталям</p>
+                        <h3 class="reason-item first-reason-img">Внимание к деталям</h3>
                         <p class="description">Идейные соображения, а также начало повседневной работы по
                             формированию позиции.</p>
                     </li>
                     <li class="why-are-we-list">
-                        <p class="reason-item second-reason-img">Пунктуальность</p>
+                        <h3 class="reason-item second-reason-img">Пунктуальность</h3>
                         <p class="description">Задача организации, в особенности же рамки и место обучения
                             кадров влечет за собой.</p>
                     </li>
                     <li class="why-are-we-list">
-                        <p class="reason-item third-reason-img">Планирование</p>
+                        <h3 class="reason-item third-reason-img">Планирование</h3>
                         <p class="description">Равным образом консультация с широким активом в значительной
                             степени обуславливает.</p>
                     </li>
                     <li class="why-are-we-list">
-                        <p class="reason-item forth-reason-img">Внимание к деталям</p>
+                        <h3 class="reason-item forth-reason-img">Внимание к деталям</h3>
                         <p class="description">Значимость этих проблем настолько очевидна, что реализация
                             плановых заданий.</p>
                     </li>
@@ -129,7 +131,7 @@
                         <img class="our-team-pic"
                             srcset="./images/team/igor_demjanenko.jpg 1x, ./images/team/igor_demjanenko@2x.jpg 2x, ./images/team/igor_demjanenko@3x.jpg 3x"
                             src="./images/team/igor_demjanenko.jpg" alt="Игорь Демьяненко" width="270" height="260">
-                        <p class="name">Игорь Демьяненко</p>
+                        <h3 class="name">Игорь Демьяненко</h3>
                         <p class="position" lang="en">Product Designer</p>
                         <ul class="social-list list">
                             <li class="social-list-margin" lang="en">
@@ -166,7 +168,7 @@
                         <img class="our-team-pic"
                             srcset="./images/team/olga_repina.jpg 1x, ./images/team/olga_repina@2x.jpg 2x, ./images/team/olga_repina@3x.jpg 3x"
                             src="./images/team/olga_repina.jpg" alt="Ольга Репина" width="270" height="260">
-                        <p class="name">Ольга Репина</p>
+                        <h3 class="name">Ольга Репина</h3>
                         <p class="position" lang="en">Frontend Developer</p>
                         <ul class="social-list list">
                             <li class="social-list-margin" lang="en">
@@ -203,7 +205,7 @@
                         <img class="our-team-pic"
                             srcset="./images/team/nikolay_tarasov.jpg 1x, ./images/team/nikolay_tarasov@2x.jpg 2x, ./images/team/nikolay_tarasov@3x.jpg 3x"
                             src="./images/team/nikolay_tarasov.jpg" alt="Николай Тарасов" width="270" height="260">
-                        <p class="name">Николай Тарасов</p>
+                        <h3 class="name">Николай Тарасов</h3>
                         <p class="position" lang="en">Marketing</p>
                         <ul class="social-list list">
                             <li class="social-list-margin" lang="en">
@@ -240,7 +242,7 @@
                         <img class="our-team-pic"
                             srcset="./images/team/mihail_ermakov.jpg 1x, ./images/team/mihail_ermakov@2x.jpg 2x, ./images/team/mihail_ermakov@3x.jpg 3x"
                             src="./images/team/mihail_ermakov.jpg" alt="Михаил Ермаков" width="270" height="260">
-                        <p class="name">Михаил Ермаков</p>
+                        <h3 class="name">Михаил Ермаков</h3>
                         <p class="position" lang="en">UI Designer</p>
                         <ul class="social-list list">
                             <li class="social-list-margin" lang="en">
@@ -339,7 +341,7 @@
             </section>
             <!--Социальные сети-->
             <section class="join">
-                <h2 class="join-header">Присоединяйтесь</h2>
+                <b class="join-header">Присоединяйтесь</b>
                 <ul class="list" lang="en">
                     <li class="join-item">
                         <a class="social-list-item" href="" aria-label="instagram" target="_blank">
@@ -371,17 +373,17 @@
                 </ul>
             </section>
             <section class="subscription-block">
-                <label class="subscription-block-label">
-                    Подпишитесь на рассылку
-                    <div class="subscription-block-wrapper">
-                        <input class="mail-field " type="email" name="email" placeholder="E-mail">
-                        <button class="submit-button" type="submit">Подписаться
-                            <svg class="submit-pic">
-                                <use href="./images/sprite.svg#send-pic"></use>
-                            </svg>
-                        </button>
-                    </div>
-                </label>
+                <b class="subscription-block-label">
+                    Подпишитесь на рассылку </b>
+                <div class="subscription-block-wrapper">
+                    <input class="mail-field " type="email" name="email" placeholder="E-mail">
+                    <button class="submit-button" type="submit">Подписаться
+                        <svg class="submit-pic">
+                            <use href="./images/sprite.svg#send-pic"></use>
+                        </svg>
+                    </button>
+                </div>
+
             </section>
         </div>
     </footer>
@@ -430,8 +432,8 @@
 
                 <label class="checkbox-label">
                     <input type="checkbox" class="checkbox" name="checkbox">
-                    <span class="checkbox-icon">
-                    </span>
+                    <!-- <span class="checkbox-icon">
+                    </span> -->
                     <span class="checkbox-agreement">Соглашаюсь с рассылкой и принимаю
                         <a class=" link" href="">Условия
                             договора</a></span>
