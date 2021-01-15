@@ -566,7 +566,8 @@ button {
   .why-are-we-list {
     width: 354px;
   }
-  .why-are-we-list:nth-child(2n + 1) {
+
+  .why-are-we-list:not(:last-child) {
     margin-right: 30px;
   }
 }
@@ -575,9 +576,6 @@ button {
     -ms-flex-wrap: nowrap;
     flex-wrap: nowrap;
     width: 270px;
-  }
-  .why-are-we-list:not(:last-child) {
-    margin-right: 30px;
   }
 }
 .why-are-we-list .description {
